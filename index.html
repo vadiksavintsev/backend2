@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <title>Backend_zadanie_2</title>
+</head>
+<body>
+ <h1>GET HTTP/1.0</h1>
+ <img src="HTTP1.0.jpg" width="500px" height="300px">
+ <h4>С помощью запроса GET в протоколе HTTP 1.0 получили главную страницу сайта kubsu-dev.ru</br> По умолчанию сервер отвечает по протоколу HTTP 1.1</h4>
+ <h1>GET HTTP/1.1</h1>
+ <img src="HTTP1.1.jpg" width="500px" height="300px">
+ <h4>С помощью запроса GET в протоколе HTTP 1.1 получили внутренную страницу u52989.kubsu-dev.ru</h4>
+ <h1>HEAD file.tar.gz</h1>
+ <img src="HEAD.jpg" width="500px" height="300px">
+ <h4>С помощью запроса HEAD узнал информацию о файле file.tar.gz </br>В параметре "Content-Length" содержится информация о размере файла</h4>
+ <h1>HEAD image.png</h1>
+ <img src="HEADimage.jpg" width="500px" height="300px">
+ <h4>С помощью запроса HEAD узнал информацию о файле image.png </br>В параметре "Content-Type" содержитс информация о типе файла</h4> 
+ <h1>Comment</h1>
+ <img src="Comment.jpg" width="500px" height="300px">
+ <h4>Отправил комментарий с помощью запроса POST, в теле которого был указан comment= "мой комментарий"</br> В ответ был получен "мой комментарий", а также строка "Привет мир!"</h4>
+ <h1>Range</h1>
+ <img src="Range.jpg" width="500px" height="300px">
+ <h4>С помощью запроса GET c заголовком Range=0-99 были получены 1-ые 100 байт файла file.tar.gz</h4>
+ <h1>Code</h1>
+ <img src="Code.jpg" width="500px" height="300px">
+ <h4>С помощью запроса HEAD c заголовком Accept-Charset: UTF-8 определил кодировку ресурса index.php</h4>
+</body>
+</html>
